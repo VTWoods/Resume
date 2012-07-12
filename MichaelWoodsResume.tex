@@ -1,8 +1,8 @@
 % LaTeX resume using res.cls
 \documentclass[line,margin]{res} 
-%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-%\usepackage{newcent}   % uses new century schoolbook postscript font 
 \usepackage{hyperref}
+\usepackage[none]{hyphenat}
+\usepackage{textcomp}
 
 \begin{document}
 
@@ -13,96 +13,92 @@
 
  
 \begin{resume}
- 
-\section{Biography} A \textbf{\emph{passionate}} Software Engineer working in \textbf{\emph{Virtualization}} and \textbf{\emph{Operating System}} Development with experience in \textbf{\emph{Web Development}} and \textbf{\emph{Open Source Projects}}. 
- 
- 
-\section{Education} 
-        {\sl Master of Science,} (GPA 3.8) \\
-        Virginia Polytechnic Institute and State University, Blacksburg VA. 2009-2011 \\
-        Major: Computer Science and Applications (Thesis:  CloudSpace) \\
-        Graduate Research Assistant (NSF Grant 2009 - 2011)\\
-\\[-5pt]
-        {\sl Bachelor of Science,} Cum Laude (GPA 3.4) \\
-        Virginia Polytechnic Institute and State University, Blacksburg VA. 2005-2009 \\
-        Major: Computer Science Minor: Mathematics (Focus on Cryptography)
-
- 
-\section{Technology \\ Skills} {\sl Languages:} \textbf{C, Perl, Java}, Python, JavaScript, Prolog, Lisp, C++ \\
-                {\sl Operating Systems:} \textbf{Linux} (Arch/Ubuntu/Fedora), Cisco IOS, Windows \\
-                {\sl Technologies:} \textbf{Emacs, Linux Shared Libraries, Arxan Guardit, GIT}, Java Byte code Engineering, Tomcat, AJAX, JSON,
-                Java Applets, Ant, Make (Complex Build Infrastructures), SVN, Clear Case, Sockets, Posix Threads \\
-                {\sl Frameworks:} \textbf{ZK, VMWare ESXi, JUnit}, Openstack \\
-                {\sl Hobbies:} \LaTeX, Django, jQuery Mobile, jQuery, Arduino, Xbox Media Center, OpenMPI, Spring Security
- 
-\section{Personal \\ Projects}
-     \textbf{\emph{\url{http://github.com/VTWoods}}}
-     \begin{itemize} \itemsep -2pt %reduce space between items
-        \item \textbf{Shopster} - Social Supermarket Shopping Web Application
-        \item \textbf{Jquery-mobile fork} - Work on enhancing the jQuery Mobile events. One master pull.
-        \item \textbf{Webinterface.mclicker} - XBMC Remote control app based on jQuery Mobile 
-        \item \textbf{Arduino-IR-XBMC} - Perl script for accepting messages from an Arduino containing remote control commands
-        \item \textbf{Resume} - This resume and formatting files
-     \end{itemize}
-     \textbf{\emph{\url{http://gitorious.org/~vtwoods}}}
-     \begin{itemize} \itemsep -2pt %reduce space between items
-        \item \textbf{vtwoodss-xbmc-pandora-pithos} - Fork to enhance the plugin to use pithos
-     \end{itemize}
-     \textbf{\emph{\url{http://code.google.com/VTWoods@gmail.com/}}}
-     \begin{itemize} \itemsep -2pt %reduce space between items
-        \item \textbf{Annoflow} - Byte code engineering project to annotate data and boundaries in the cloud to track and control data
-        \item \textbf{CloudSpace} - Student Web development platform that creates virtual barriers in
-          a single Java Virtual Machine to provide virtualized web servers.  Also includes framework for extending the virtual machine
-          infrastructure into Java Applets
-     \end{itemize}
-     \textbf{\emph{\url{http://sourceforge.net/projects/web-cat/}}}
-     \begin{itemize} \itemsep -2pt %reduce space between items
-        \item \textbf{Exception Doctor} - Java library used to improve messages associated with Java exceptions
-        \item \textbf{Student Library} - Contains special persistence library used to persist plain old java objects written by students
-     \end{itemize}
+%first sentance is what i am doing. second is what i have done
+%Flesh out web development as ground breaking and relating to computer science education
+\section{Summary} \textbf{\emph{Dedicated}} Software Engineer working on mission critical \textbf{\emph{Virtualization Security Systems}} to protect Cisco's \textbf{\emph{Virtualization Assets}}.  Previous experience creating innovative teaching environments to allow instructors to teach entry level Computer Science courses using \textbf{\emph{Web Development and Open Source Technologies}}.
 
 \section{Employment}
-        {\sl Software Engineer} \hfill Fall 2011 \\
-           Cisco, Network Operating System Technology Group, Research Triangle Park, NC
-              \begin{itemize}  \itemsep -2pt % reduce space between items
-                 \item Designed and implemented first generation run time integrity
-                  module for Cisco IOS-XE Linux based routers
-                 \item Managed working relationship with 3rd party vendor including
-                   travel to San Jose to meet in person
-                 \item Developed cutting edge virtualization fingerprinting system for
-                   Cisco virtual appliances
-                 \item Active team code reviewer
-                 \item Participated in team employee recruiting and new hire panels
-                 \item Performed sustaining work on Cisco CRS1000v cloud virtual router
-                 \item Became team expert in router operating system security and
-                   Linux infrastructure build system
-              \end{itemize}
+        {\sl Software Engineer II} \hfill September 2011 - Current \\
+        Cisco, Network Operating System Technology Group, Research Triangle Park, NC
+        \begin{itemize}  \itemsep -2pt % reduce space between items
+          \item Lead a technical proof of concept for a first generation binary security system
+            \begin{itemize} \itemsep -2pt % reduce space between items
+                \item Evaluated Arxan Guardit and Metaforic Metafortress and presented technical findings to principal engineers
+                \item Primary technical contact between Arxan and engineering team
+                \item Developed requirements for embeded system security gaps
+                \item Designed a security system that generates a self protecting binary
+                \item Presented final design to distinguished and principal engineers
+                \item Integrated solution into the core architecture of Cisco's first generation virtual software router (CSR1000v)
+                \item Scheduled to ship in Fall of 2012
+            \end{itemize}
+            \item Transitioning into Cisco virtualization reference platform project
+            \item Enhanced fingerprint and key hiding system for Cisco virtual appliances
+            \item Performed sustaining work for Cisco cloud software router
+            \item Gained fundamental programming skills from team code reviews
+            \item Participated in employee recruiting and new hire welcome panels
+        \end{itemize}
         {\sl Graduate Research Assistant} \hfill  Fall 2009 - Spring 2011 \\
-           Virginia Tech Computer Science Department, Blacksburg, VA
-              \begin{itemize} \itemsep -2pt %reduce space between items
-                   \item Primary developer designing and implementing the CloudSpace project
-                   \item Enhanced student persistence library to allow more
-                     expressive plain old java objects to be persisted
-                   \item Extended CloudSpace Virtualization infrastructure
-                     into Java applet framework using JavaScript and server side logic
-                   \item Created Exception Doctor exception improvement infrastructure used at over 80 universities
-              \end{itemize}
+        Virginia Tech Computer Science Department, Blacksburg, VA
+        \begin{itemize} \itemsep -2pt
+            \item Primary architect and developer of the CloudSpace web devleopment environment
+            \item Extended xml based persistence library to handle complex java objects
+            \item Integrated CloudSpace virtualization infrastructure into JAVA applets using JSON
+            \item Created Exception Doctor to improve JAVA exceptions (Used at over 80 universities)
+        \end{itemize}
         {\sl Software Engineering Intern} \hfill  Summer 2008, 2009, 2010 \\
            Cisco, Network Operating System Technology Group, Research Triangle Park, NC
-              \begin{itemize}  \itemsep -2pt %reduce space between items
-                   \item Led a team of interns to develop source code level unit
-                     tests for IOS traffic class feature
+              \begin{itemize}  \itemsep -2pt
+                   \item Led a team of interns to develop unit tests for IOS traffic class feature
                    \item Created a lab equipment management system for lab checkout and check-in
-                   \item Worked to sustain build infrastructure for Linux
-                     based research and development project
+                   \item Sustained build infrastructure for first generation Linux based router
               \end{itemize}
         {\sl Software Engineering Intern} \hfill  Summer 2007 \\
            Wachovia, Wystar Retirement Solutions, Rockville, MD
               \begin{itemize}  \itemsep -2pt %reduce space between items
-                   \item Converted SQR scripts to Perl
+                   \item Converted over 21 SQR scripts to Perl scripts
                    \item Increased script performance over 80\% in some cases
-                   \item Worked on JUnit test framework for Java Spring based project
-              \end{itemize} 
+                   \item Worked on JUnit test framework for JAVA Spring based project
+              \end{itemize}
+ 
+%maybe dont use url as title?
+\section{Open Source \\ Contributions}
+     \textbf{\emph{\href{http://github.com/VTWoods}{GitHub Hosted Projects (github.com/VTWoods)}}}
+     \begin{itemize} \itemsep -2pt %reduce space between items
+        \item \textbf{Shopster} - Social supermarket shopping web application
+        \item \textbf{Webinterface.mclicker} - XBMC remote control app based on jQuery Mobile 
+        \item \textbf{Jquery-mobile fork} - Custom jQuery Mobile fork (One project contribution)
+        \item \textbf{Arduino-IR-XBMC} - Perl script accepting Arduino generated infared commands
+     \end{itemize}
+     \pagebreak
+     \textbf{\emph{\href{http://code.google.com/u/VTWoods@gmail.com/}{Google Code Hosted Projects (code.google.com/u/VTWoods@gmail.com/)}}}
+     \begin{itemize} \itemsep -2pt %reduce space between items
+         \item \textbf{Annoflow} - Tracking and controlling data flow in the cloud with annotations
+         \item \textbf{CloudSpace} - Student web development platform that provides virtual machine infrastructure in a standard web development environment.
+     \end{itemize}
+     \textbf{\emph{\href{http://gitorious.org/~vtwoods}{Gitorius Hosted Projects (gitorious.org/\texttildelow{}vtwoods)}}}
+      \begin{itemize} \itemsep -2pt %reduce space between items
+        \item \textbf{vtwoodss-xbmc-pandora-pithos} - Pandora plugin enhancement to use Pithos
+     \end{itemize}
+     \textbf{\emph{\href{http://sourceforge.net/projects/web-cat/}{SourceForge Hosted Projects (sourceforge.net/projects/web-cat/)}}}
+     \begin{itemize} \itemsep -2pt %reduce space between items
+        \item \textbf{Exception Doctor} - JAVA library that improves exception messages for students
+        \item \textbf{Student Library} - Implementation independent XML persistence library used by students
+     \end{itemize}
+
+ 
+\section{Education} 
+        \textbf{\emph{Master of Science, Computer Science}} (GPA 3.8) \\
+        Graduate Research Assistant (NSF Grant 2009 - 2011) \\
+        Thesis:  CloudSpace: A Web Development Environment for CS1 Courses \\
+        Virginia Polytechnic Institute and State University, Blacksburg VA. 2009-2011 \\
+\\[-5pt]
+        \textbf{\emph{Bachelor of Science, Computer Science}} Cum Laude (GPA 3.4) \\
+        Virginia Polytechnic Institute and State University, Blacksburg VA. 2005-2009 \\
+        Minor: Mathematics (Focus on Cryptography)
+
+\section{Technology \\ Skills} \textbf{\emph{Languages:}} C, JAVA, Perl, Python, JavaScript \\
+                \textbf{\emph{Operating Systems:}} Linux (Arch/Ubuntu/Fedora/Red Hat), Cisco IOS, Windows \\
+                \textbf{\emph{Frameworks and Tools:}} Django, jQuery Mobile, jQuery, Javasist Byte Code Engineering, GIT, VMWare ESXi, AJAX, JSON, JAVA Applets, Ant, Make, SVN, Sockets, Posix Threads, \LaTeX, ZK, JUnit, Emacs, Openstack, Spring Security, Tomcat, Arduino, OpenMPI \\
 
 \section{Publications}
 ASEE SE Paper ``An Infrastructure for Teaching CS1 in the Cloud'' Spring 2010 \\
@@ -117,10 +113,3 @@ FECS Paper ``Improving Exception Messages with Exception Doctor'' Spring 2011
 \end{itemize}
 \end{resume}
 \end{document}
-
-
-
-
-
-
-
