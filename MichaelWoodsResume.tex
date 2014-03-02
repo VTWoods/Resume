@@ -3,6 +3,9 @@
 \usepackage{hyperref}
 \usepackage[none]{hyphenat}
 \usepackage{textcomp}
+\usepackage{enumitem}
+
+%\setlist{nolistsep}
 
 \begin{document}
 
@@ -14,7 +17,7 @@
  
 \begin{resume}
 
-\section{Summary} I am a dedicated software engineer working on mission critical virtualization products at Cisco.  I have experience creating innovative teaching environments to allow instructors to teach entry level Computer Science courses using web development and open source technologies.
+\section{Summary} I am a dedicated software engineer working on mission critical next generation Cisco products.  I have experience creating innovative teaching environments and working on first generation virtalization products.
 
 \section{Employment}
         {\sl Software Engineer III} \hfill September 2011 - Current \\
@@ -67,7 +70,6 @@
          \item \textbf{Annoflow} - Tracking and controlling data flow in the cloud with annotations
          \item \textbf{CloudSpace} - Student web development platform that provides virtual machine infrastructure in a standard web development environment.
      \end{itemize}
-     \pagebreak
      \textbf{\emph{\href{http://gitorious.org/~vtwoods}{Gitorius Hosted Projects (gitorious.org/\texttildelow{}vtwoods)}}}
       \begin{itemize} \itemsep -2pt %reduce space between items
         \item \textbf{vtwoodss-xbmc-pandora-pithos} - Pandora plugin enhancement to use Pithos
@@ -89,9 +91,9 @@
         Virginia Polytechnic Institute and State University, Blacksburg VA. 2005-2009 \\
         Minor: Mathematics (Focus on Cryptography)
 
-\section{Technology \\ Skills} \textbf{\emph{Languages:}} C, JAVA, Perl, Python, Functional Languages \\
-                \textbf{\emph{Operating Systems:}} Linux (Ubuntu/ArchLinux), Cisco IOS, QNX, Windows \\
-                \textbf{\emph{Software Experience:}} KVM/Qemu, Django, IOS-XR, IOS-XE, Distributed Systems \\
+\section{Technology \\ Skills} \textbf{\emph{Languages:}} C, JAVA, Perl, Python, Functional Languages, \LaTeX \\
+                \textbf{\emph{Operating Systems:}} Linux, Cisco IOS, QNX \\
+                \textbf{\emph{Software Experience:}} KVM/Qemu, Test Driven Development, Highly Scaleable Computing, IOS-XR, IOS-XE, Distributed Systems \\
 %                \textbf{\emph{Frameworks and Tools:}} KVM, Qemu, Django, jQuery Mobile, jQuery, Javasist Byte Code Engineering, GIT, VMWare ESXi, AJAX, JSON, JAVA Applets, Ant, Make, SVN, Sockets, Posix Threads, \LaTeX, ZK, JUnit, Emacs, Openstack, Spring Security, Tomcat, Arduino, OpenMPI \\
 
 \section{Publications}
@@ -101,11 +103,17 @@ SIGCSE Workshop ``Teaching CS1 in the Cloud'' Spring 2010 \\
 FECS Paper ``Improving Exception Messages with Exception Doctor'' Spring 2011
 
 \section{Awards}
-\begin{itemize}  
+\begin{itemize}[noitemsep]  
 \itemsep -2pt %reduce space between item
 \setlength{\itemindent}{-1.5em} %Change the Indent on the bullets so they dont look weird
 \item Boy Scouts of America: Eagle Scout, Bronze Palm, and Arrow of Light
-\item Virginia Tech undergraduate research consortium 2009:  Second place in faculty and industry division, Exception Doctor
+\item Virginia Tech Undergraduate Research Consortium 2009
+\begin{itemize}[noitemsep]
+\setlength{\itemindent}{-2em}
+\itemsep -2pt
+\item Second place in industry division, Exception Doctor
+\item Second place in faculty division, Exception Doctor 
+\end{itemize}
 \item Two NOSTG Exceptional Contribution Awards
 \end{itemize}
 \end{resume}
